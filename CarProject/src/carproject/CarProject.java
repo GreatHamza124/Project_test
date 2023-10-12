@@ -9,14 +9,69 @@ package carproject;
  * @author Hamza
  */
 public class CarProject {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        String name = "car";
-        int age = 27;
-        System.out.println(name + " " + age);
+    
+    private String name;
+    private String model;
+    private int age;
+    private boolean carEngine;
+    
+    public CarProject(){
+        
     }
     
+    public CarProject(String name, String model, int age){
+        setName(name);
+        setModel(model);
+        setAge(age);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isCarEngine() {
+        return carEngine;
+    }
+
+    public void setCarEngine(boolean carEngine) {
+        this.carEngine = carEngine;
+    }
+    
+    public void startEngine(){
+        setCarEngine(true);
+    }
+    
+    public void stopEngine(){
+        setCarEngine(false);
+    }
+
+    
+
+
+    public static void main(String[] args) {
+        CarProject mycar = new CarProject();
+        mycar.startEngine();
+
+    }
+
 }
