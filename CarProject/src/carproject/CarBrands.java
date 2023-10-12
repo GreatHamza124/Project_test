@@ -10,4 +10,8 @@ package carproject;
  */
 public class CarBrands {
     
+    public static void Brand(){
+        System.out.println("The car's make model and variant is.....");
+    }
+    
 }
