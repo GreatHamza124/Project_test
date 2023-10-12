@@ -71,6 +71,7 @@ public class CarProject {
     public static void main(String[] args) {
         CarProject mycar = new CarProject();
         mycar.startEngine();
+        mycar.stopEngine();
 
     }
 
