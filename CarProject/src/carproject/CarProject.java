@@ -14,7 +14,9 @@ public class CarProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String name = "car";
+        int age = 27;
+        System.out.println(name + " " + age);
     }
     
 }
